@@ -1,0 +1,63 @@
+body {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+    background-color: gray;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #242424;
+    width: auto;
+}
+
+.logo {
+    width: 50%;
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+/* Resize images */
+.logo img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+.logo a {
+    text-align: center;
+    color: #fff404;
+    font-size: 3vw;
+    font-family: 'Modern Warfare', sans-serif;
+    text-decoration: none;
+                                                
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1vw;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+li{
+    color: #fff404;
+    text-decoration: none;
+    all: unset;
+}
+main {
+    background-color: grey;
+    display: flex;
+    height: 100%;
+    width: auto;
+}

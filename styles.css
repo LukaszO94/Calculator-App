@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto;
+    font-family: Arial;
     display: flex;
     flex-direction: column;
     width: auto;
@@ -14,6 +14,7 @@ header {
     justify-content: space-around;
     background-color: #242424;
     width: auto;
+  
 }
 
 .logo {
@@ -75,11 +76,48 @@ div h1 {
     align-items: center;
     text-align: center;
     color: #fff404;
-    font-size: 80%;
+    font-size: 2vh;
     font-family: 'Modern Warfare', sans-serif;
-    padding: 3vh;
+   
+
 }
 
- td {
+td {
     padding: 5px;
+}
+td .prawy{ 
+width: 30%;
+}
+    
+
+
+td input {
+    width: 100px;
+    height: 15px;
+    text-align: right;
+    align-self: center;
+}
+
+td p {
+    width: 100px;
+    height: 15px;
+    text-align: right;
+    background-color: rgb(187, 255, 221);
+    padding-left: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+tr{
+    justify-content: center;
+}
+
+
+table {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background-color: #4b4b4b;
 }

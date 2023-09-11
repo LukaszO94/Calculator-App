@@ -14,6 +14,7 @@ header {
     justify-content: space-around;
     background-color: #242424;
     width: auto;
+  max-width: 100%;
   
 }
 
@@ -49,10 +50,11 @@ ul {
     text-align: center;
     justify-content: center;
     text-decoration: none;
+    max-width: 40%;
 }
 
 li{
-    color: #fff404;
+  
     text-decoration: none;
     all: unset;
 }
@@ -113,6 +115,7 @@ td p {
 }
 tr{
     justify-content: center;
+    height: 5vh;
 }
 
 
@@ -120,4 +123,28 @@ table {
     padding-top: 10px;
     margin-bottom: 20px;
     background-color: #4b4b4b;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+button {
+    all:unset;
+    text-align: center;
+    align-self: center;
+    font-size: 2vh;
+    font-weight: bold;
+    border: 1px solid #fff404;
+    border-radius: 5px;
+    width: auto;
+    font-family: 'Modern Warfare', sans-serif;
+    font-weight: 300;
+    padding: 0.5vh;
+    margin: 0.5vh;
+}
+
+thead {
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: large;
+    min-height: 10vh;
 }

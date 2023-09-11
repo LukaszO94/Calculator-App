@@ -60,4 +60,26 @@ main {
     display: flex;
     height: 100%;
     width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+div h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff404;
+    font-size: 80%;
+    font-family: 'Modern Warfare', sans-serif;
+    padding: 3vh;
+}
+
+ td {
+    padding: 5px;
 }

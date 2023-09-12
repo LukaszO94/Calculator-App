@@ -6,20 +6,22 @@
     <link href="https://fonts.cdnfonts.com/css/modern-warfare" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>COGNEX ROI Calculator</title>
+    
 </head>
 <body>
 
     <header>
         <div class="logo"><img src="./images/Cognex_Logo_Yellow.png" alt="Cognex Logo" type="png">
         <a>ROI Calculator</a></div>
-        <ul>
-            <li><a href="./index.html">Kalkulator Uproszczony</a></li>
-            <li><a href="./zaawansowany.html">Kalkulator Zaawansowany</a></li>
+        
+            <div><a href="./index.html">Kalkulator Uproszczony</a></div>
+            <div><a href="./zaawansowany.html">Kalkulator Zaawansowany</a></div>
             
-        </ul>
+        
     </header>
     <script src="./script.js"></script>
     <main>
+       
         <div class="prosty">
         <h1 class="naglowek">Kalkulator Uproszczony</h1>
         <table>
@@ -31,7 +33,7 @@
             <tbody>
               <tr>
                 <td>Ilość produkowanych elementów dziennie</td>
-                <td class="prawy" align="right"><form><input id="elementy" type="number" placeholder="szt."></form></td>
+                <td class="prawy" align="right"><form><input id="elementy" type="number" placeholder="szt." ></form></td>
               </tr>
               <tr>
                 <td>Ilość wadliwych produktów dziennie</td>
@@ -54,11 +56,7 @@
                 <td class="prawy" align="right"><p id="km"></p></td>
               </tr>
             </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="2"><button onclick='display()' id="przycisk">Przelicz</button></th>
-                </tr>
-            </tfoot>
+            
             </table>
             <table>
                 <thead>
@@ -105,13 +103,18 @@
                         <td>Miesięczne oszczędności z rozwiązania COGNEX</td>
                         <td class="prawy" align="right"><p id="dm"></p></td>
                       </tr>
-                      </tbody>
-                      <tfoot>
+                      
+                      
                         <tr>
                             <td>Zwrot inwestycji (w miesiącach)</td>
                             <td class="prawy" align="right"><p id="mm"></p></td>
                           </tr>
-                      </tfoot>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                            <th colspan="2"><button onclick='display()' id="przycisk">Przelicz</button></th>
+                        </tr>
+                    </tfoot>
                     </table>
             </div>
     </main>

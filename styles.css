@@ -4,20 +4,32 @@ body {
     flex-direction: column;
     width: auto;
     margin: 0;
-    background-color: gray;
+    background-color: #3d3d3d;
+
 }
 a{
     text-decoration: none;
+    color: #969696;
 }
 header {
     display: flex;
-    justify-content: space-around;
+    flex-grow: unset;
+    justify-content: space-between;
     background-color: #242424;
     width: auto;
   max-width: 100%;
-  
-}
+  align-items: center;
+  padding: 1vw;
 
+}
+header div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-justify: auto;
+    color: #fff404;
+}
 .logo {
     width: 50%;
     max-height: 100px;
@@ -54,12 +66,15 @@ ul {
 }
 
 li{
-  
+    text-align: center;
+    justify-content: center;
+  overflow: hidden;
     text-decoration: none;
     all: unset;
+    font-size: 100%;
 }
 main {
-    background-color: grey;
+    background-color: #3d3d3d;
     display: flex;
     height: 100%;
     width: auto;
@@ -104,7 +119,7 @@ td p {
     width: 100px;
     height: 15px;
     text-align: right;
-    background-color: rgb(187, 255, 221);
+    background-color: #fff204af ;
     padding-left: 2px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -122,7 +137,7 @@ tr{
 table {
     padding-top: 10px;
     margin-bottom: 20px;
-    background-color: #4b4b4b;
+    background-color: #565656;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -147,4 +162,9 @@ thead {
     font-weight: bolder;
     font-size: large;
     min-height: 10vh;
+}
+
+tfoot {
+    background: rgb(255,244,4);
+background: radial-gradient(circle, rgba(255,244,4,1) 35%, rgba(2,0,36,0) 100%);
 }

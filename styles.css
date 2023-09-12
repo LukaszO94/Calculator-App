@@ -128,6 +128,10 @@ td p {
     border-style: solid;
     border-color: white;
 }
+td textarea {
+    width: 80%;
+    height: 15px;
+}
 tr{
     justify-content: center;
     height: 5vh;

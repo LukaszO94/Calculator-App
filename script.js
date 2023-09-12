@@ -53,26 +53,37 @@ function dn(){
         style: "unit",        unit: "day",  unitDisplay: "long"}).format(miesC));
     return miesB;
   }
+  function proDD() {
+    const miesC = pro()*wa();
+    
+        
+    return miesC;
+  }
 
   function dzO() {
-    const oszcz = proD()*ko();
+    const oszcz = proDD()*ko();
     var oszczD=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(oszcz));
     return oszczD;
   }
+  function dzOO() {
+    const oszcz = proDD()*ko();
+    
+    return oszcz;
+  }
 
   function mie() {
-    const oszczM = dzO()*dn();
+    const oszczM = dzOO()*dn();
     var oszczMi=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(oszczM));
     return oszczMi;
   }
-  function mieC() {
-    const oszczMa = dzO()*dn();
+  function mieCC() {
+    const oszczMa = dzOO()*dn();
     
     return oszczMa;
   }
 
   function total() {
-    const zwr = kosztr()/mieC();
+    const zwr = kosztr()/mieCC();
     var zwrot=(new Intl.NumberFormat("en-US", {
         style: "unit",        unit: "month",  unitDisplay: "long"}).format(zwr));
     return zwrot;

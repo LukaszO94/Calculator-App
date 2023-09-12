@@ -48,13 +48,12 @@ function dn(){
   }
 
   function proD() {
-    const miesC = pro()*wa();
-    var miesB=(new Intl.NumberFormat("en-US", {
-        style: "unit",        unit: "day",  unitDisplay: "long"}).format(miesC));
-    return miesB;
+    const miesC = pro()/100*wa();
+    
+    return miesC;
   }
   function proDD() {
-    const miesC = pro()*wa();
+    const miesC = pro()/100*wa();
     
         
     return miesC;
@@ -85,7 +84,8 @@ function dn(){
   function total() {
     const zwr = kosztr()/mieCC();
     var zwrot=(new Intl.NumberFormat("en-US", {
-        style: "unit",        unit: "month",  unitDisplay: "long"}).format(zwr));
+        style: "unit",        unit: "month", minimumFractionDigits: 0,
+        maximumFractionDigits: 2, unitDisplay: "short"}).format(zwr));
     return zwrot;
   }
 

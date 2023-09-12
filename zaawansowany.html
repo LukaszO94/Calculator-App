@@ -6,20 +6,22 @@
     <link href="https://fonts.cdnfonts.com/css/modern-warfare" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>COGNEX ROI Calculator</title>
+    
 </head>
 <body>
 
     <header>
         <div class="logo"><img src="./images/Cognex_Logo_Yellow.png" alt="Cognex Logo" type="png">
         <a>ROI Calculator</a></div>
-        <ul>
-          <li><a href="./index.html">Kalkulator Uproszczony</a></li>
-          <li><a href="./zaawansowany.html">Kalkulator Zaawansowany</a></li>
-          <li><a href="#fourth">header link three</a></li>
-        </ul>
+        
+            <div><a href="./index.html">Kalkulator Uproszczony</a></div>
+            <div><a href="./zaawansowany.html">Kalkulator Zaawansowany</a></div>
+            
+        
     </header>
     <script src="./script.js"></script>
     <main>
+       
         <div class="prosty">
         <h1 class="naglowek">Kalkulator Zaawansowany</h1>
         <table>
@@ -29,36 +31,44 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Ilość produkowanych elementów dziennie</td>
-                <td class="prawy" align="right"><form><input id="elementy" type="number" placeholder="szt."></form></td>
+              <tr class="top">
+                <td class="top">Ilość produkowanych elementów dziennie</td>
+                <td class="prawy top" align="right"><form><input id="elementy" type="number" placeholder="szt." ></form></td>
               </tr>
               <tr>
                 <td>Ilość wadliwych produktów dziennie</td>
                 <td class="prawy" align="right"><input id="wady" type="number" placeholder="szt."></td>
               </tr>
               <tr>
-                <td>Koszt każdego defektu</td>
-                <td class="prawy" align="right"><input id="koszt" type="number" placeholder="pln."></td>
+                <td class="top">Koszt każdego defektu</td>
+                <td class="prawy top" align="right"></td>
               </tr>
               <tr>
-                <td>Ilość dni roboczych miesięcznie</td>
-                <td class="prawy" align="right"><input id="dni" type="number" placeholder="" ></td>
+                <td>Koszty materiałowe</td>
+                <td class="prawy" align="right"><input id="kosztmat" type="number" placeholder="eur" ></td>
+              </tr>
+              <tr>
+                <td>Koszt roboczogodziny</td>
+                <td class="prawy" align="right"><input id="roboczogodz" type="number" placeholder="" ></td>
+              </tr>
+              <tr>
+                <td>Ile czasu na naprawę wady</td>
+                <td class="prawy" align="right"><input id="naprawa" type="number" placeholder="" ></td>
+              </tr>
+              <tr>
+                <td class="top">Całkowity koszt każdej wady</td>
+                <td class="prawy top" align="right"><p id="kw1"></p></td>
               </tr>
               <tr>
                 <td>Dzienny koszt wad produkcyjnych</td>
-                <td class="prawy" align="right"><p id="kd"></p></td>
+                <td class="prawy" align="right"><p id="dziennyk"></p></td>
               </tr>
               <tr>
                 <td>Miesięczny koszt wad produkcyjnych</td>
-                <td class="prawy" align="right"><p id="km"></p></td>
+                <td class="prawy" align="right"><p id="miesiecznyk"></p></td>
               </tr>
             </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="2"><button onclick='display()' id="przycisk">Przelicz</button></th>
-                </tr>
-            </tfoot>
+            
             </table>
             <table>
                 <thead>
@@ -105,13 +115,18 @@
                         <td>Miesięczne oszczędności z rozwiązania COGNEX</td>
                         <td class="prawy" align="right"><p id="dm"></p></td>
                       </tr>
-                      </tbody>
-                      <tfoot>
+                      
+                      
                         <tr>
                             <td>Zwrot inwestycji (w miesiącach)</td>
                             <td class="prawy" align="right"><p id="mm"></p></td>
                           </tr>
-                      </tfoot>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                            <th colspan="2"><button onclick='display()' id="przycisk">Przelicz</button></th>
+                        </tr>
+                    </tfoot>
                     </table>
             </div>
     </main>

@@ -140,6 +140,7 @@ table {
     background-color: #565656;
     padding-left: 5px;
     padding-right: 5px;
+    border-collapse: collapse;
 }
 
 button {
@@ -167,4 +168,8 @@ thead {
 tfoot {
     background: rgb(255,244,4);
 background: radial-gradient(circle, rgba(255,244,4,1) 35%, rgba(2,0,36,0) 100%);
+}
+
+.top {
+    border-top: 3px solid #fff404;
 }

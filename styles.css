@@ -169,7 +169,7 @@ thead {
     min-height: 10vh;
 }
 
-tfoot {
+tfoot .guzik{
     background: rgb(255,244,4);
 background: radial-gradient(circle, rgba(255,244,4,1) 35%, rgba(2,0,36,0) 100%);
 }

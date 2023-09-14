@@ -22,44 +22,44 @@
       <div class="logo"><img src="./images/Cognex_Logo_Yellow.png" alt="Cognex Logo" type="png">
       <a>ROI Calculator</a></div>
       
-      <div><a href="./index.html">Kalkulator Uproszczony</a></div>
-      <div><a href="./zaawansowany.html">Kalkulator Zaawansowany</a></div>
+      <div><a href="./index.html">Simplified Calculator</a></div>
+      <div><a href="./zaawansowany.html">Advanced Calculator</a></div>
     </div>
   </header>
     <script src="./script.js"></script>
     <main>
        
         <div class="prosty">
-        <h1 class="naglowek">Kalkulator Uproszczony</h1>
+        <h1 class="naglowek">Simplified Calculator</h1>
         <table>
             <thead>
               <tr>
-                <th colspan="2">Proces Produkcji</th>
+                <th colspan="2">Customer Process</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Ilość produkowanych elementów dziennie</td>
-                <td class="prawy" align="right"><form><input id="elementy" type="number" placeholder="szt." ></form></td>
+                <td>Parts processed daily</td>
+                <td class="prawy" align="right"><form><input id="elementy" type="number" placeholder="num." ></form></td>
               </tr>
               <tr>
-                <td>Ilość wadliwych produktów dziennie</td>
-                <td class="prawy" align="right"><input id="wady" type="number" placeholder="szt."></td>
+                <td>Amount of defects daily</td>
+                <td class="prawy" align="right"><input id="wady" type="number" placeholder="num."></td>
               </tr>
               <tr>
-                <td>Koszt każdego defektu</td>
-                <td class="prawy" align="right"><input id="koszt" type="number" placeholder="pln."></td>
+                <td>Cost of each defect</td>
+                <td class="prawy" align="right"><input id="koszt" type="number" placeholder="eur."></td>
               </tr>
               <tr>
-                <td>Ilość dni roboczych miesięcznie</td>
+                <td>Working days per month</td>
                 <td class="prawy" align="right"><input id="dni" type="number" placeholder="" ></td>
               </tr>
               <tr>
-                <td>Dzienny koszt wad produkcyjnych</td>
+                <td>Daily cost of production defects</td>
                 <td class="prawy" align="right"><p id="kd"></p></td>
               </tr>
               <tr>
-                <td>Miesięczny koszt wad produkcyjnych</td>
+                <td>Monthly cost of production defects</td>
                 <td class="prawy" align="right"><p id="km"></p></td>
               </tr>
             </tbody>
@@ -68,12 +68,12 @@
             <table>
                 <thead>
                   <tr>
-                    <th colspan="2">Rozwiązanie COGNEX</th>
+                    <th colspan="2">COGNEX Solution</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Koszt Systemu COGNEX</td>
+                    <td>COGNEX system cost</td>
                     <td class="prawy" align="right"><form><input id="rozw" type="number" placeholder="eur"></form></td>
                   </tr>
              </tbody>
@@ -81,16 +81,16 @@
             <table>
                 <thead>
                   <tr>
-                    <th colspan="2">Oszczędności</th>
+                    <th colspan="2">Savings</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Szacowany % zapobieganych wad</td>
+                    <td>Percent Cognex solution expect to prevent </td>
                     <td class="prawy" align="right"><form><input id="proc" type="number" placeholder="%"></form></td>
                   </tr>
                   <tr>
-                    <td>Ilość defektów wyłapanych dziennie</td>
+                    <td>Defect prevented daily</td>
                     <td class="prawy" align="right"><p id="dd"></p></td>
                   </tr>
                   </tbody>
@@ -98,22 +98,22 @@
                 <table>
                     <thead>
                       <tr>
-                        <th colspan="2">Zwrot z Inwestycji</th>
+                        <th colspan="2">Return of investment</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Dzienne oszczędności z rozwiązania COGNEX</td>
+                        <td>Savings from COGNEX solution daily</td>
                         <td class="prawy" align="right"><p id="do"></p></td>
                       </tr>
                       <tr>
-                        <td>Miesięczne oszczędności z rozwiązania COGNEX</td>
+                        <td>Savings from COGNEX solution monthly</td>
                         <td class="prawy" align="right"><p id="dm"></p></td>
                       </tr>
                       
                       
                         <tr>
-                            <td>Zwrot inwestycji (w miesiącach)</td>
+                            <td>Payoff time (months)</td>
                             <td class="prawy" align="right"><p id="mm"></p></td>
                           </tr>
                       </tbody>

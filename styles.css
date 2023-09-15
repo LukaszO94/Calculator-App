@@ -15,6 +15,7 @@ a{
 
 header {
     background-color: #242424;  
+    
 }
 
 .header {
@@ -118,6 +119,11 @@ main {
 }
 
 main div {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+main div div {
     display: flex;
     flex-direction: column;
     padding: 2vh;

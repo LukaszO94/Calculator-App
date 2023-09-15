@@ -26,10 +26,10 @@
         <div><a href="./zaawansowany.html">Kalkulator Zaawansowany</a></div>
       </div>
     </header>
-    <script src="./script.js"></script>
+    <script src="./scriptzaw.js"></script>
     <main>
        
-        <div class="prosty">
+        <div class="zaawansowany">
         <h1 class="naglowek">Kalkulator Zaawansowany</h1>
         <table>
             <thead>
@@ -59,8 +59,8 @@
                 <td class="prawy" align="right"><input id="roboczogodz" type="number" placeholder="" ></td>
               </tr>
               <tr>
-                <td>Ile czasu na naprawę wady</td>
-                <td class="prawy" align="right"><input id="naprawa" type="number" placeholder="" ></td>
+                <td>Ile czasu na naprawę wady (minuty)</td>
+                <td class="prawy" align="right"><input id="naprawa" type="number" placeholder="min." ></td>
               </tr>
               <tr>
                 <td class="top">Całkowity koszt każdej wady</td>
@@ -85,8 +85,8 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td id="top" align="center">Produkt</td>
-                    <td id="top" class="prawy" align="center">Cena</td>
+                    <td id="top" align="center" class="top">Produkt</td>
+                    <td id="top" class="prawy top" align="center">Cena</td>
                   </tr>
                   <tr>
                     <td align="center"><textarea></textarea></td>
@@ -110,16 +110,115 @@
                   </tr>
                   <tr>
                     <td align="center"><textarea></textarea></td>
-                    <td class="prawy" align="right"><form><input id="prod5" type="number" placeholder="eur"></form></td>
+                    <td class="prawy" align="right"><form><input id="prod6" type="number" placeholder="eur"></form></td>
                   </tr>
              </tbody>
              <tfoot>
               <tr>
-                <td id="top" align="center">Cena</td>
+                <td align="center" class="top">Ilość potrzebnych zestawów</td>
+                <td class="prawy top"  align="right"><form><input id="lines" type="number" placeholder=""></form></td>
+              </tr>
+              <tr>
+                <td id="top" align="center" style="font-weight: bolder;">Cena</td>
                 <td class="prawy" align="right"><p id="sumaprod"></p></td>
               </tr>
              </tfoot>
             </table>
+
+
+
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">Integracja/Instalacja COGNEX</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="top">
+                  <td class="top">Montaż/Elektryka</td>
+                  <td class="prawy top" align="right"><form><input id="montaz" type="number" placeholder="eur." ></form></td>
+                </tr>
+                <tr>
+                  <td>Dodatkowy sprzęt</td>
+                  <td class="prawy" align="right"><input id="dodsprzet" type="number" placeholder="eur."></td>
+                </tr>
+                <tr>
+                  <td>Konfiguracja</td>
+                  <td class="prawy" align="right"><input id="konfig" type="number" placeholder="eur."></td>
+                </tr>
+                <tr>
+                  <td>Koszty przestoju po stronie klienta</td>
+                  <td class="prawy" align="right"><input id="przestoj" type="number" placeholder="eur" ></td>
+                </tr>
+                <tr>
+                  <td>Inne</td>
+                  <td class="prawy" align="right"><input id="ine" type="number" placeholder="" ></td>
+                </tr>
+                <tr>
+                  <td class="top">Suma</td>
+                  <td class="prawy top" align="right"><p id="suminst"></p></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="konkurencja">
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="2">Rozwiązanie konkurencji</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="top">
+                    <td class="top">Koszt jednego systemu (sprzęt)</td>
+                    <td class="prawy top" align="right"><form><input id="konksprzet" type="number" placeholder="eur." ></form></td>
+                  </tr>
+                  <tr>
+                    <td>Liczba potrzebnych systemów</td>
+                    <td class="prawy" align="right"><input id="konklines" type="number" placeholder=""></td>
+                  </tr>
+                  <tr>
+                    <td class="top">Całkowity koszt rozwiązania</td>
+                    <td class="prawy top" align="right"><p id="konksum"></p></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="2">Integracja/Instalacja Konkurencji</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="top">
+                    <td class="top">Montaż/Elektryka</td>
+                    <td class="prawy top" align="right"><form><input id="montazk" type="number" placeholder="eur." ></form></td>
+                  </tr>
+                  <tr>
+                    <td>Dodatkowy sprzęt</td>
+                    <td class="prawy" align="right"><input id="dodsprzetk" type="number" placeholder="eur."></td>
+                  </tr>
+                  <tr>
+                    <td>Konfiguracja</td>
+                    <td class="prawy" align="right"><input id="konfigk" type="number" placeholder="eur."></td>
+                  </tr>
+                  <tr>
+                    <td>Koszty przestoju po stronie klienta</td>
+                    <td class="prawy" align="right"><input id="przestojk" type="number" placeholder="eur" ></td>
+                  </tr>
+                  <tr>
+                    <td>Inne</td>
+                    <td class="prawy" align="right"><input id="inek" type="number" placeholder="" ></td>
+                  </tr>
+                  <tr>
+                    <td class="top">Suma</td>
+                    <td class="prawy top" align="right"><p id="suminstk"></p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
             <table>
                 <thead>
                   <tr>
@@ -129,34 +228,51 @@
                 <tbody>
                   <tr>
                     <td>Dzienna ilość defektów</td>
-                    <td class="prawy" align="right"><form><input id="proc" type="number" placeholder=""></form></td>
-                  </tr>
-                  <tr>
-                    <td>Procent defektów wyłapanych dziennie</td>
-                    <td class="prawy" align="right"><input id="procenty" type="number" placeholder="%" ></td>
-                  </tr>
-                  <tr>
-                    <td>Dzienna ilość wykrytych wad</td>
-                    <td class="prawy" align="right"><p id="sumaprod"></p></td>
+                    <td class="prawy" align="right"><p id="defd"></p></td>
                   </tr>
                   <tr></tr>
                   <tr>
-                    <td>Oszczędności miesięczne</td>
-                    <td class="prawy" align="right"><p id="oszmies"></p></td>
+                    <td>Koszt systemu COGNEX</td>
+                    <td class="prawy" align="right"><p id="sumcog"></p></td>
                   </tr>
                   <tr>
-                    <td>Koszt całkowity rozwiązania</td>
-                    <td class="prawy" align="right"><p id="sumaprod"></p></td>
+                    <td>Oczekiwana skuteczność systemu</td>
+                    <td class="prawy" align="right"><input id="skutsys" type="number" placeholder="%" ></td>
+                  </tr>
+                  <tr>
+                    <td>Oszczędności miesięczne z systemem COGNEX</td>
+                    <td class="prawy" align="right"><p id="oszCOG"></p></td>
                   </tr>
                   <tr></tr>
-                  <tr><td>Zwrot inwestycji (w miesiącach)</td>
-                    <td class="prawy" align="right"><p id="zwrot"></p></td>
+                  <tr>
+                    <td>Koszt systemu konkurencji</td>
+                    <td class="prawy" align="right"><p id="sumkon"></p></td>
                   </tr>
+                  <tr>
+                    <td>Oczekiwana skuteczność systemu konkurencji</td>
+                    <td class="prawy" align="right"><input id="skutsyskon" type="number" placeholder="%" ></td>
+                  </tr>
+                  <tr>
+                    <td>Oszczędności miesięczne z systemem konkurencji</td>
+                    <td class="prawy" align="right"><p id="oszKON"></p></td>
+                  </tr>
+                  <tr></tr><tr>
+                    <td class="top"></td>
+                    <td class="top" align="right"></td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: large; font-weight: bold;">Zwrot inwestycji (w miesiącach)</td>
+                    <td class="prawy" align="right"><p id="zwrotzinw"></p></td>
+                  </tr>
+                  <tr></tr>
                   </tbody>
                   <tfoot class="guzik"><th colspan="2"><button onclick='display()' id="przycisk">Przelicz</button></th></tfoot>
                 </table>
                 
+
             </div>
+
+
     </main>
 </body>
 </html>

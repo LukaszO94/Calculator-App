@@ -117,6 +117,11 @@ function skutecznoscsystemu() {
     var sku=document.getElementById("skutsys").value; 
     return sku;
 }
+
+function skutecznoscsystemukon() {
+    var skut=document.getElementById("skutsyskon").value; 
+    return skut;
+}
 //Kalkulacje
 //Tabela1
 function kosztwady() {
@@ -140,8 +145,138 @@ function kosztsystemu() {
     var ks=produktycognex()*ilosczestawow();
     return ks;
 }
+
+//tabela 3
+function kosztmontazucognex() {
+    var sumamon=montaz()+dodatkowysprzet()+konfiguracja()+przestoj()+inne();
+    return sumamon;
+}
+
+//kalkulacje konkurencja
+function kosztsystemukonk() {
+    var ksk = konsys()+liniekon();
+    return ksk;
+}
+
+function kosztmontazukon() {
+    var sumamonk=montazk()+dsk()+konfk()+przestojkonkurencja()+iinekonk();
+    return sumamonk;
+}
+
+//kalkulacje oszczednosci
+function kosztcog() {
+    var kc = Number(kosztsystemu())+Number(kosztmontazucognex());
+    return kc;
+}
+
+function kosztkon() {
+    var kk = Number(kosztsystemukonk())+Number(kosztmontazukon());
+    return kk;
+}
+
+function oszczednosccog() {
+    var oc = kosztcog()/kosztwadmiesiecznie();
+    var occ = oc * 100 / skutecznoscsystemu();
+    return occ;
+}
+
+function oszczednosckon() {
+    var ok = kosztkon()/kosztwadmiesiecznie();
+    var ock = ok * 100 / skutecznoscsystemukon();
+    return ock;
+}
+
+function zwrotroznica() {
+    var roznica = oszczednosccog() - oszczednosckon();
+    return roznica;
+}
+
+//formatowanie
+function kosztwadyeur() {
+    const kwe = kosztwady();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function kosztwaddziennieur() {
+    const kwe = kosztwaddziennie();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+  
+  function kosztwadmiesiecznieeur() {
+    const kwe = kosztwadmiesiecznie();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function kosztwadmiesiecznieeuro() {
+    const kwe = kosztwadmiesiecznie();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function kosztsystemueur() {
+    const kwe = kosztsystemu();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function kosztmontazucognexeur() {
+    const kwe = kosztmontazucognex();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function kosztsystemukonkeur() {
+    const kwe = kosztsystemukonk();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function kosztmontazukoneur() {
+    const kwe = kosztmontazukon();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function kosztcogeur() {
+    const kwe = kosztcog();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function oszczednosccogeur() {
+    const kwe = oszczednosccog();
+    var kweu=(new Intl.NumberFormat("en-US", {
+        style: "unit",        unit: "month", minimumFractionDigits: 0,
+        maximumFractionDigits: 2, unitDisplay: "short"}).format(kwe));
+    return kweu;
+  }
+
+  function kosztkoneur() {
+    const kwe = kosztkon();
+    var kweu=(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(kwe));
+    return kweu;
+  }
+
+  function oszczednosckoneur() {
+    const kwe = oszczednosckon();
+    var kweu=(new Intl.NumberFormat("en-US", {
+        style: "unit",        unit: "month", minimumFractionDigits: 0,
+        maximumFractionDigits: 2, unitDisplay: "short"}).format(kwe));
+    return kweu;
+  }
+
+  function zwrotroznicaeur() {
+    const kwe = zwrotroznica();
+    var kweu=(new Intl.NumberFormat("en-US", {
+        style: "unit",        unit: "month", minimumFractionDigits: 0,
+        maximumFractionDigits: 2, unitDisplay: "short"}).format(kwe));
+    return kweu;
+  }
 //Wyświetlanie wyników
-function display() {
+function displayadv() {
     console.log(elementy());
     console.log(wady());
     console.log(kosztymaterialowe());
@@ -149,4 +284,16 @@ function display() {
     console.log(kosztwady());
     console.log(kosztwaddziennie());
     console.log(kosztwadmiesiecznie());
+    document.getElementById("kw1").innerHTML = kosztwadyeur();
+    document.getElementById("dziennyk").innerHTML = kosztwaddziennieur();
+    document.getElementById("miesiecznyk").innerHTML = kosztwadmiesiecznieeur();
+    document.getElementById("miesiecznykc").innerHTML = kosztwadmiesiecznieeuro();
+    document.getElementById("sumaprod").innerHTML = kosztsystemueur();
+    document.getElementById("suminst").innerHTML = kosztmontazucognexeur();
+    document.getElementById("konksum").innerHTML = kosztsystemukonkeur();
+    document.getElementById("suminstk").innerHTML = kosztmontazukoneur();
+    document.getElementById("sumcog").innerHTML = kosztcogeur();
+    document.getElementById("oszCOG").innerHTML = oszczednosccogeur();
+    document.getElementById("sumkon").innerHTML = kosztkoneur();
+    document.getElementById("zwrotzinw").innerHTML = zwrotroznicaeur();
   }

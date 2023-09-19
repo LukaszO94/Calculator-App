@@ -13,7 +13,7 @@
     <header>
       <div class="language">
               <ul>
-                <li><a href="zaawansowany.html"><img id="flaga" src="images\poland.png" type="png"></li>
+                <li><a href="./zaawansowany.html"><img id="flaga" src="images\poland.png" type="png"></li>
                   <li><a a href="zaawansowany_ang.html"><img id="flaga" src="images\uk.jpg" type="jpg"></li>
               </ul>
               </div>
@@ -22,56 +22,56 @@
         <div class="logo"><img src="./images/Cognex_Logo_Yellow.png" alt="Cognex Logo" type="png">
         <a>ROI Calculator</a></div>
         
-        <div><a href="./index.html">Kalkulator Uproszczony</a></div>
-        <div><a href="./zaawansowany.html">Kalkulator Zaawansowany</a></div>
+        <div><a href="index_ang.html">Simplified Calculator</a></div>
+      <div><a href="./zaawansowany_ang.html">Advanced Calculator</a></div>
       </div>
     </header>
     <script src="./scriptzaw.js"></script>
     <main>
        
         <div class="zaawansowany">
-        <h1 class="naglowek">Kalkulator Zaawansowany</h1>
+        <h1 class="naglowek">Advanced Calculator</h1>
         <table>
             <thead>
               <tr>
-                <th colspan="2">Proces Produkcji</th>
+                <th colspan="2">Customer Process</th>
               </tr>
             </thead>
             <tbody>
               <tr class="top">
-                <td class="top">Ilość produkowanych elementów dziennie</td>
+                <td class="top">Parts processed daily</td>
                 <td class="prawy top" align="right"><form><input id="elementy" type="number" placeholder="szt." ></form></td>
               </tr>
               <tr>
-                <td>Ilość wadliwych produktów dziennie</td>
+                <td>Amount of defects daily</td>
                 <td class="prawy" align="right"><input id="wady" type="number" placeholder="szt."></td>
               </tr>
               <tr>
-                <td class="top">Koszt każdego defektu</td>
+                <td class="top">Cost of each defect</td>
                 <td class="prawy top" align="right"></td>
               </tr>
               <tr>
-                <td>Koszty materiałowe</td>
+                <td>Hardware Cost</td>
                 <td class="prawy" align="right"><input id="kosztmat" type="number" placeholder="eur" ></td>
               </tr>
               <tr>
-                <td>Koszt roboczogodziny</td>
+                <td>Hourly Labour Rate</td>
                 <td class="prawy" align="right"><input id="roboczogodz" type="number" placeholder="" ></td>
               </tr>
               <tr>
-                <td>Ile czasu na naprawę wady (minuty)</td>
+                <td>Time to process defect (minutes)</td>
                 <td class="prawy" align="right"><input id="naprawa" type="number" placeholder="min." ></td>
               </tr>
               <tr>
-                <td class="top">Całkowity koszt każdej wady</td>
+                <td class="top">Total cost of each defect</td>
                 <td class="prawy top" align="right"><p id="kw1"></p></td>
               </tr>
               <tr>
-                <td>Dzienny koszt wad produkcyjnych</td>
+                <td>Daily cost of defects</td>
                 <td class="prawy" align="right"><p id="dziennyk"></p></td>
               </tr>
               <tr>
-                <td>Miesięczny koszt wad produkcyjnych</td>
+                <td>Monthly cost of defects</td>
                 <td class="prawy" align="right"><p id="miesiecznyk"></p></td>
               </tr>
             </tbody>
@@ -80,13 +80,13 @@
             <table>
                 <thead>
                   <tr>
-                    <th colspan="2" class="bottom">Rozwiązanie COGNEX</th>
+                    <th colspan="2" class="bottom">COGNEX Solution</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td id="top" align="center" class="top">Produkt</td>
-                    <td id="top" class="prawy top" align="center">Cena</td>
+                    <td id="top" align="center" class="top">Product</td>
+                    <td id="top" class="prawy top" align="center">Cost</td>
                   </tr>
                   <tr>
                     <td align="center"><textarea></textarea></td>
@@ -115,11 +115,11 @@
              </tbody>
              <tfoot>
               <tr>
-                <td align="center" class="top">Ilość potrzebnych zestawów</td>
+                <td align="center" class="top">Number of Systems needed</td>
                 <td class="prawy top"  align="right"><form><input id="lines" type="number" placeholder=""></form></td>
               </tr>
               <tr>
-                <td id="top" align="center" style="font-weight: bolder;">Cena</td>
+                <td id="top" align="center" style="font-weight: bolder;">Total Hardware Cost</td>
                 <td class="prawy" align="right"><p id="sumaprod"></p></td>
               </tr>
              </tfoot>
@@ -130,32 +130,32 @@
             <table>
               <thead>
                 <tr>
-                  <th colspan="2">Integracja/Instalacja COGNEX</th>
+                  <th colspan="2">Cognex Integration/Installation</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="top">
-                  <td class="top">Montaż/Elektryka</td>
+                  <td class="top">Mounting/Wiring</td>
                   <td class="prawy top" align="right"><form><input id="montaz" type="number" placeholder="eur." ></form></td>
                 </tr>
                 <tr>
-                  <td>Dodatkowy sprzęt</td>
+                  <td>Extra hardware</td>
                   <td class="prawy" align="right"><input id="dodsprzet" type="number" placeholder="eur."></td>
                 </tr>
                 <tr>
-                  <td>Konfiguracja</td>
+                  <td>Configuration</td>
                   <td class="prawy" align="right"><input id="konfig" type="number" placeholder="eur."></td>
                 </tr>
                 <tr>
-                  <td>Koszty przestoju po stronie klienta</td>
+                  <td>Downtime cost to Customer</td>
                   <td class="prawy" align="right"><input id="przestoj" type="number" placeholder="eur." ></td>
                 </tr>
                 <tr>
-                  <td>Inne</td>
+                  <td>Other</td>
                   <td class="prawy" align="right"><input id="ine" type="number" placeholder="eur." ></td>
                 </tr>
                 <tr>
-                  <td class="top">Suma</td>
+                  <td class="top">Total</td>
                   <td class="prawy top" align="right"><p id="suminst"></p></td>
                 </tr>
               </tbody>
@@ -165,30 +165,30 @@
             <table>
                 <thead>
                   <tr>
-                    <th colspan="2">Oszczędności</th>
+                    <th colspan="2">Savings/Payoff</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Miesięczny koszt defektów defektów</td>
+                    <td>Cost of defects /month</td>
                     <td class="prawy" align="right"><p id="miesiecznykc"></p></td>
                   </tr>
                   
                   <tr>
-                    <td>Koszt systemu COGNEX</td>
+                    <td>COGNEX System Cost</td>
                     <td class="prawy" align="right"><p id="sumcog"></p></td>
                   </tr>
                   <tr>
-                    <td>Oczekiwana skuteczność systemu</td>
+                    <td>Cognex Expected performance level</td>
                     <td class="prawy" align="right"><input id="skutsys" type="number" placeholder="%" ></td>
                   </tr>
               
                   <tr>
-                    <td class="top" style="font-weight: bolder; font-size: large;">Czas zwrotu inwestycji (w miesiącach)</td>
+                    <td class="top" style="font-weight: bolder; font-size: large;">Payoff time (months)</td>
                     <td class="prawy top" align="right"><p id="oszCOG"></p></td>
                   </tr>
                   </tbody>
-                  <tfoot class="guzik"><th colspan="2"><button onclick='displayadv()' id="przycisk">Przelicz</button></th></tfoot>
+                  <tfoot class="guzik"><th colspan="2"><button onclick='displayadv()' id="przycisk">Calculate</button></th></tfoot>
                 </table>
                 
             
@@ -198,20 +198,20 @@
               <table>
                 <thead>
                   <tr>
-                    <th colspan="2">Rozwiązanie konkurencji</th>
+                    <th colspan="2">Competitive Solution</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="top">
-                    <td class="top">Koszt jednego systemu (sprzęt)</td>
+                    <td class="top">Cost of Competition hardware</td>
                     <td class="prawy top" align="right"><form><input id="konksprzet" type="number" placeholder="eur." ></form></td>
                   </tr>
                   <tr>
-                    <td>Liczba potrzebnych systemów</td>
+                    <td>Number of Systems needed</td>
                     <td class="prawy" align="right"><input id="konklines" type="number" placeholder=""></td>
                   </tr>
                   <tr>
-                    <td class="top">Całkowity koszt rozwiązania</td>
+                    <td class="top">Total hardware cost</td>
                     <td class="prawy top" align="right"><p id="konksum"></p></td>
                   </tr>
                 </tbody>
@@ -220,32 +220,32 @@
               <table>
                 <thead>
                   <tr>
-                    <th colspan="2">Integracja/Instalacja Konkurencji</th>
+                    <th colspan="2">Competitor Integration/Installation</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="top">
-                    <td class="top">Montaż/Elektryka</td>
+                    <td class="top">Mounting/Wiring</td>
                     <td class="prawy top" align="right"><form><input id="montazk" type="number" placeholder="eur." ></form></td>
                   </tr>
                   <tr>
-                    <td>Dodatkowy sprzęt</td>
+                    <td>Extra hardware</td>
                     <td class="prawy" align="right"><input id="dodsprzetk" type="number" placeholder="eur."></td>
                   </tr>
                   <tr>
-                    <td>Konfiguracja</td>
+                    <td>Configuration</td>
                     <td class="prawy" align="right"><input id="konfigk" type="number" placeholder="eur."></td>
                   </tr>
                   <tr>
-                    <td>Koszty przestoju po stronie klienta</td>
+                    <td>Downtime cost to Customer</td>
                     <td class="prawy" align="right"><input id="przestojk" type="number" placeholder="eur." ></td>
                   </tr>
                   <tr>
-                    <td>Inne</td>
+                    <td>Other</td>
                     <td class="prawy" align="right"><input id="inek" type="number" placeholder="eur." ></td>
                   </tr>
                   <tr>
-                    <td class="top">Suma</td>
+                    <td class="top">Total</td>
                     <td class="prawy top" align="right"><p id="suminstk"></p></td>
                   </tr>
                 </tbody>
@@ -253,20 +253,20 @@
                 <table>
                   <tbody>
                   <tr>
-                    <td>Koszt systemu konkurencji</td>
+                    <td>Competitive System Cost</td>
                     <td class="prawy" align="right"><p id="sumkon"></p></td>
                   </tr>
                   <tr>
-                    <td>Oczekiwana skuteczność systemu konkurencji</td>
+                    <td>Competition Expected performance level</td>
                     <td class="prawy" align="right"><input id="skutsyskon" type="number" placeholder="%" ></td>
                   </tr>
                   <tr>
-                    <td style="font-weight: bolder; font-size: large;">Czas zwrotu inwestycji (w miesiącach)</td>
+                    <td style="font-weight: bolder; font-size: large;">Competitive Payoff Time</td>
                     <td class="prawy" align="right"><p id="oszKON"></p></td>
                   </tr>
                 
                   <tr>
-                    <td class="top" style="font-size: large; font-weight: bold;">Różnica zwrotu inwestycji (w miesiącach)</td>
+                    <td class="top" style="font-size: large; font-weight: bold;">Payoff Time Difference (months)</td>
                     <td class="prawy top" align="right"><p id="zwrotzinw"></p></td>
                   </tr>
                 </tbody>

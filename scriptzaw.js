@@ -148,7 +148,7 @@ function kosztsystemu() {
 
 //tabela 3
 function kosztmontazucognex() {
-    var sumamon=montaz()+dodatkowysprzet()+konfiguracja()+przestoj()+inne();
+    var sumamon=Number(montaz())+Number(dodatkowysprzet())+Number(konfiguracja())+Number(przestoj())+Number(inne());
     return sumamon;
 }
 

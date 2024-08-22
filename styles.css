@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     width: auto;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #e2e2e2;
 
 }
 
@@ -42,7 +42,7 @@ header {
 .language {
     
    padding-right: 3vw;
-    border-bottom: 3px solid #969696;
+    border-bottom: 3px solid #dadada;
   
     justify-content: right;
     align-items: center;
@@ -110,7 +110,7 @@ li{
     font-size: 100%;
 }
 main {
-    background-color: #eeeeee;
+    background-color: #e9e9e9;
     display: flex;
     height: 100%;
     width: auto;
@@ -133,9 +133,10 @@ div h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff404;
-    font-size: 2vh;
-    font-family: 'Modern Warfare', sans-serif;
+    color: #000000;
+    
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
    
 
 }
@@ -182,10 +183,11 @@ tr{
 table {
     padding-top: 10px;
     margin-bottom: 20px;
-    background-color: #565656;
+    background-color: #d1d1c3;
     padding-left: 5px;
     padding-right: 5px;
     border-collapse: collapse;
+    border-radius: 7px;
 }
 
 button {

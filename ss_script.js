@@ -6,7 +6,7 @@ function pracownicy(){
 }
 
 function srednikosztsystemu(){
-  const srednikoszt = 10000;
+  const srednikoszt = 4000;
   return srednikoszt;
 }
 function wa(){
@@ -32,7 +32,7 @@ function kosztwady(){
   return kosztw;
 }
 function kosztpracownika(){
-  var koszt=2500; 
+  var koszt=1000; 
   return koszt;
 }
 function kosztpracownikow(){

@@ -34,18 +34,25 @@
         <h1 class="naglowek">Super Simplified Calculator</h1>
         <div class="treść">
           <h1>Modify the values below</h1>
-          <div class="formularz"><a>At inspection point, there are <input id="ss_pracownicy" class="ss_number" placeholder="" > 
-            operators dedicated to inspecting <input id="ss_wady" class="ss_number" placeholder="" > pieces produced per year. 
-            The defect rate is <input id="ss_procent" class="ss_number" placeholder="" >% and the cost of each defect is <input id="ss_kosztwady" class="ss_number" placeholder="" > €, the number of customer complaints is <input id="ss_skargi" class="ss_number" placeholder="" >, and the cost associated with each complaint is <input id="ss_koszt" class="ss_number" placeholder="" >€.</a>
+          <div class="formularz"><a>At inspection point, there are <input id="ss_pracownicy" class="ss_number" placeholder="" style="width: 15vw;"> 
+            operators dedicated to inspecting <input id="ss_wady" class="ss_number" placeholder="" style="width: 15vw;"> pieces produced per year. 
+           <p></p> The defect rate is <input id="ss_procent" class="ss_number" placeholder="" style="width: 15vw;">% and the cost of each defect is <input id="ss_kosztwady" class="ss_number" placeholder="" style="width: 15vw;"> €. 
+          <P></P>Amount of customer complaints is <input id="ss_skargi" class="ss_number" placeholder="" style="width: 15vw;"> in a year, and the cost associated with each complaint is <input id="ss_koszt" class="ss_number" placeholder="" style="width: 15vw;" >€.</a>
         </div>
+        <button class="collapse" onclick="toggleSection()">►Cost details</button>
+<div id="costSection" style="display: none;">
+    <p>Operator cost: <input id="ss_operatorcost" class="ss_number" value="1500" style="width: 15vw;" >€</p>
+    <p>System cost: <input id="ss_systemcost" class="ss_number" value="10000" style="width: 15vw;" >€</p>
+</div>
+
           </div>
-          <div>
-            <button onclick='display()' id="przycisk">CALCULATE</button>
+          <div >
+            <button class="compute" onclick='display()' id="przycisk">CALCULATE</button>
           </div>
           <div class="rezulta">
             <h1>Your ROI:</h1>
             <div><a id="ss_roi"></a><a> Eur</a></div>
-            <h3>Estimated payback in <a id="ss_mnth" class="zapyt">?</a>   months.</h3>
+            <h3>Estimated payback in <a id="ss_mnth" class="zapyt" style="color: #fffc4ac7; font-size: 3vh;">?</a>   months.</h3>
           </div>
           <!--
         <table>

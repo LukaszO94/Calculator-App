@@ -196,7 +196,7 @@ table {
     border-collapse: collapse;
 }
 
-button {
+.compute {
     all:unset;
     text-align: center;
     align-self: center;
@@ -212,11 +212,28 @@ button {
     margin: 0.5vh;
 }
 
+
+button.collapse {
+    background-color: transparent;
+    border: none;
+    color: grey;
+    text-align: left;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 2vh;
+    margin-left: 4vw;
+}
+
 thead {
     font-family: Arial;
     font-weight: bolder;
     font-size: large;
     min-height: 10vh;
+}
+
+#costSection {
+    padding: 10px;
+    background-color: #f9f9f9;
 }
 
 tfoot .guzik{
@@ -252,7 +269,9 @@ background: radial-gradient(circle, rgba(255,244,4,1) 35%, rgba(2,0,36,0) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 60%;
+    background-color: lightgray;
+    border-radius: 5px;
     align-self: center;
 }
 .rezulta h1 {

@@ -5,8 +5,22 @@ function pracownicy(){
     return prac;
 }
 
+function toggleSection() {
+  var section = document.getElementById("costSection");
+  var button = document.getElementById("costButton");
+  
+  if (section.style.display === "none") {
+      section.style.display = "block";
+      button.textContent = "▼Cost details";
+  } else {
+      section.style.display = "none";
+      button.textContent = "►Cost details";
+  }
+}
+
+
 function srednikosztsystemu(){
-  const srednikoszt = 4000;
+  const srednikoszt = document.getElementById("ss_systemcost").value;;
   return srednikoszt;
 }
 function wa(){
@@ -32,7 +46,7 @@ function kosztwady(){
   return kosztw;
 }
 function kosztpracownika(){
-  var koszt=1000; 
+  var koszt=document.getElementById("ss_operatorcost").value;; 
   return koszt;
 }
 function kosztpracownikow(){
